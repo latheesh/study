@@ -1,5 +1,6 @@
 package com.latheesh.study.book.model;
 
+import com.latheesh.study.common.model.BaseModel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -7,9 +8,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "book", schema = "study")
-@Data
-@NoArgsConstructor
-public class Book {
+public class Book extends BaseModel {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
